@@ -1,8 +1,8 @@
+import { FC } from 'react'
 import css from './Loader.module.css'
-
 import { BallTriangle } from 'react-loader-spinner'
 
-export default function Loader() {
+const Loader: FC = () => {
 
          return (   <BallTriangle
             height={100}
@@ -13,3 +13,5 @@ export default function Loader() {
          )
   
 }
+
+export default Loader
