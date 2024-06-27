@@ -9,7 +9,7 @@ const Loader: FC = () => {
             color="#8a2be2"
             ariaLabel="ball-triangle-loading"
             wrapperClassName={css.loader}
-        />
+        ></BallTriangle>
     );
 }
 
