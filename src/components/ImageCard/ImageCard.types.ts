@@ -4,5 +4,5 @@ export interface ImageCardProps {
     url: string;
     name: string;
     fullInfo: Img;
-    openModal: (data: Img) => void
+    openModal: (data: Img) => void;
 }

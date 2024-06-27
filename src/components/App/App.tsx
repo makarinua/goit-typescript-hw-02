@@ -1,13 +1,13 @@
-import { useState, useRef, useEffect } from "react"
-import SearchBar from "../SearchBar/SearchBar"
-import fetch from "../../Fetching/fetch"
-import ImageGallery from "../ImageGallery/ImageGallery"
-import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn"
-import Loader from "../Loader/Loader"
-import ImageModal from "../ImageModal/ImageModal"
+import React, { useState, useRef, useEffect } from "react";
+import SearchBar from "../SearchBar/SearchBar";
+import fetch from "../../Fetching/fetch";
+import ImageGallery from "../ImageGallery/ImageGallery";
+import LoadMoreBtn from "../LoadMoreBtn/LoadMoreBtn";
+import Loader from "../Loader/Loader";
+import ImageModal from "../ImageModal/ImageModal";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
-import * as AT from './App.types'
-import { FetchType } from "../../Fetching/fetch.types"
+import * as AT from './App.types';
+import { FetchType } from "../../Fetching/fetch.types";
 
 export default function App() {
     const [imgs, setImgs] = useState<AT.Imgs | null>(null)

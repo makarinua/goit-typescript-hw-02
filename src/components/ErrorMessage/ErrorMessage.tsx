@@ -1,7 +1,7 @@
-import { FC } from "react"
+import React, { FC } from "react";
 
 const ErrorMessage: FC = () => {
-  return (<p>Винекла помилка! Перезавантажте сторінку.</p>)
-}
+  return <p>Виникла помилка! Перезавантажте сторінку.</p>;
+};
 
-export default ErrorMessage
+export default ErrorMessage;

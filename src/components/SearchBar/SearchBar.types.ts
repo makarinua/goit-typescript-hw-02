@@ -1,3 +1,4 @@
 export interface SearchBarProps {
-    onFind: (value: string) => void
+  onFind: (value: string) => void;
 }
+
