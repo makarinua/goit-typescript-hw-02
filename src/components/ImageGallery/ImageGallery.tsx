@@ -3,7 +3,7 @@ import ImageCard from '../ImageCard/ImageCard';
 import css from './ImageGallery.module.css';
 import { ImageGalleryProps } from './ImageGallery.types';
 
-const ImageGallery = (props) => {
+const ImageGallery = (props: ImageGalleryProps) => {
    const { data, openModal } = props;
 
    return (
