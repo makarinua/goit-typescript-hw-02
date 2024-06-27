@@ -18,7 +18,7 @@ export default function App() {
     const [error, setError] = useState<boolean>(false)
     const [modalIsOpen, setIsOpen] = useState<boolean>(false);
     const [dataModal, setDataModal] = useState<AT.Img | null>(null)
-    const imgRef = useRef<HTMLUListElement | null>(null)
+    // const imgRef = useRef<HTMLUListElement | null>(null)
     
     function submitHandler(value: string): void {
         setKeyWord(value)
@@ -69,14 +69,7 @@ export default function App() {
     setDataModal(null)
   }
     
-    function scroll(): void {
-        const childNode = imgRef.current?.childNodes?.[0] as HTMLElement
-    imgRef.current?.childNodes?.[0] && window.scrollBy({
-                top: (childNode.getBoundingClientRect().height * 2),
-            left: 0,
-                behavior: "smooth",
-            })
-}
+
 
     return (
         <>
@@ -92,7 +85,7 @@ export default function App() {
             {imgs ? <ImageGallery
                 data={imgs}
                 openModal={openModal}
-                ref={imgRef}
+                
             >                
             </ImageGallery> : <></>}
             {loader && <Loader></Loader>}

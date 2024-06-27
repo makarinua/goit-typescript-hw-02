@@ -37,7 +37,6 @@ const ImageModal: FC<ImageModalProps> = ({info, isOpen, onRequestClose}) => {
             onRequestClose={onRequestClose}
             style={customStyles}
             >
-                <p className={css.helper}>Щоб закрити натисніть Esc, або за межами фото.</p>
             {info.description && <p className={css.description}>{info.description}</p>}
             <img className={css.img} src={info.urls.regular} alt={info.alt_description} />
             {info.user.username && <p className={css.author}>Author: {info.user.username}</p>}
